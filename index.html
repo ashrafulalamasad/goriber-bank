@@ -8,19 +8,91 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
-    <header class="bg-blue-600 text-white p-4">
+    <header class="bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 text-white p-6 shadow-xl border-b border-slate-700">
         <nav class="flex flex-row items-center justify-between gap-4 relative lg:flex lg:items-center lg:justify-between lg:gap-0">
             <div class="hidden lg:block"></div>
-            <div class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center w-full lg:w-auto lg:absolute lg:left-1/2 lg:-translate-x-1/2 whitespace-nowrap">Goriber Bank</div>
-            <div class="flex items-center gap-2 sm:gap-3 cursor-pointer mr-2 sm:mr-4 md:mr-8 lg:mr-12 whitespace-nowrap">
-                <span class="font-bold text-base sm:text-lg md:text-xl text-black">Ashraful Alam</span>
-                <span class="inline-flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 rounded-full bg-blue-200 ring-2 sm:ring-4 md:ring-4 lg:ring-4 ring-red-600 overflow-hidden">
+            <div class="text-2xl sm:text-3xl md:text-6xl lg:text-6xl font-extrabold text-center w-full lg:w-auto lg:absolute lg:left-1/2 lg:-translate-x-1/2 whitespace-nowrap">
+                <span class="bg-gradient-to-r from-blue-400 via-cyan-300 to-blue-500 bg-clip-text text-transparent drop-shadow-lg">Goriber Bank</span>
+            </div>
+            <div class="flex items-center gap-2 sm:gap-3 cursor-pointer mr-2 sm:mr-4 md:mr-8 lg:mr-12 whitespace-nowrap hover:opacity-90 transition-opacity">
+                <span class="font-semibold text-base sm:text-lg md:text-xl text-slate-200">Ashraful Alam</span>
+                <span class="inline-flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 rounded-full bg-gradient-to-br from-blue-400 to-cyan-500 ring-2 sm:ring-4 md:ring-4 lg:ring-4 ring-blue-400/50 overflow-hidden shadow-lg">
                     <img src="./myself.png" alt="User Image" class="w-10 h-10 sm:w-12 sm:h-12 md:w-16 md:h-16 lg:w-20 lg:h-20 rounded-full object-cover" />
                 </span>
             </div>
         </nav>
     </header>
-    <main></main>
+    <main>
+        <section class="relative bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800 py-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
+            <div class="absolute inset-0 opacity-10">
+                <div class="absolute top-20 left-10 w-72 h-72 bg-blue-500 rounded-full blur-3xl"></div>
+                <div class="absolute bottom-20 right-10 w-96 h-96 bg-cyan-500 rounded-full blur-3xl"></div>
+                <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-purple-500 rounded-full blur-3xl"></div>
+            </div>
+            
+            <div class="max-w-6xl mx-auto relative z-10">
+                <div class="text-center mb-16">
+                    <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-white via-blue-200 to-cyan-300 mb-6 drop-shadow-2xl">
+                        Welcome back, Ashraful Alam
+                    </h1>
+                    <p class="text-base sm:text-lg md:text-xl text-slate-200 drop-shadow-lg font-light">
+                        Manage your finances with ease and confidence
+                    </p>
+                    <div class="mt-6 flex items-center justify-center">
+                        <div class="inline-flex items-center gap-2 bg-slate-800/50 backdrop-blur-md px-4 py-2 rounded-full border border-slate-600/50 shadow-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                            <span class="text-lg text-slate-300 font-medium">Last login : <span id="last-login-time" class="text-cyan-300">Loading...</span></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="max-w-3xl mx-auto">
+                    <div class="relative">
+                        <div class="absolute -inset-1 bg-gradient-to-r from-blue-600 via-cyan-500 to-blue-600 rounded-3xl blur-2xl opacity-30 animate-pulse"></div>
+                        <div class="relative bg-gradient-to-br from-slate-800/90 via-slate-700/90 to-slate-800/90 backdrop-blur-xl rounded-3xl shadow-2xl border border-cyan-500/30 p-10 sm:p-12 md:p-16">
+                            <div class="absolute top-6 right-6">
+                                <p class="text-slate-300 text-sm sm:text-base md:text-lg font-mono">Account: •••• •••• 4532</p>
+                            </div>
+                            
+                            <div class="text-center">
+                                <p class="text-slate-300 text-base sm:text-lg md:text-xl font-light mb-6 tracking-wide">
+                                    Your Current Balance
+                                </p>
+                                <div class="relative">
+                                    <div class="flex items-center justify-center mb-4">
+                                        <div class="relative inline-block">
+                                            <div class="absolute inset-0 bg-gradient-to-r from-blue-400 to-cyan-400 blur-2xl opacity-40"></div>
+                                            <div class="relative bg-gradient-to-r from-white via-blue-50 to-white rounded-2xl shadow-2xl border-2 border-blue-300/50 py-6 sm:py-8 px-8 sm:px-12 md:px-16 flex items-center gap-3 sm:gap-4">
+                                                <span class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-cyan-500">৳</span>
+                                                <span id="account-balance" class="text-4xl sm:text-5xl md:text-6xl lg:text-6xl font-semibold text-slate-900 tracking-tight">5,420.50</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8 text-slate-400">
+                                    <p class="flex items-center gap-2 text-sm sm:text-base">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-400" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                                        </svg>
+                                        Bank-level Security
+                                    </p>
+                                    <p class="flex items-center gap-2 text-sm sm:text-base">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                                        </svg>
+                                        Real-time Updates
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+    </main>
     <footer></footer>
     <script src="script.js"></script>
 </body>
