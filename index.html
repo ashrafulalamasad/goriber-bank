@@ -217,6 +217,43 @@
                 </div>
             </div>
         </section>
+        <!-- Transaction History Section -->
+        <section class="bg-white">
+            <div class="max-w-6xl mx-auto py-12 sm:py-16 px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-8 sm:mb-12">
+                    <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-slate-800 mb-3 sm:mb-4">
+                        Transaction History
+                    </h2>
+                    <p class="text-slate-600 text-base sm:text-lg">
+                        Review your recent deposits and withdrawals
+                    </p>
+                </div>
+                <div class="max-w-5xl mx-auto">
+                    <div class="overflow-x-auto rounded-2xl shadow-lg border border-slate-200">
+                        <table class="min-w-full bg-white">
+                            <thead class="bg-slate-50">
+                                <tr>
+                                    <th class="px-3 sm:px-4 md:px-6 py-3 sm:py-4 border-b border-slate-200 text-center text-xs sm:text-sm md:text-base text-slate-600 font-semibold w-2/5">Date & Time</th>
+                                    <th class="px-3 sm:px-4 md:px-6 py-3 sm:py-4 border-b border-slate-200 text-center text-xs sm:text-sm md:text-base text-slate-600 font-semibold w-1/5">Type</th>
+                                    <th class="px-3 sm:px-4 md:px-6 py-3 sm:py-4 border-b border-slate-200 text-center text-xs sm:text-sm md:text-base text-slate-600 font-semibold w-2/5">Amount</th>
+                                </tr>
+                            </thead>
+                            <tbody id="transaction-history" class="divide-y divide-slate-200">
+                                <!-- Transactions will be dynamically inserted here -->
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- Empty State Message -->
+                    <div id="empty-state" class="text-center py-12 hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 mx-auto text-slate-300 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                        </svg>
+                        <p class="text-slate-500 text-lg">No transactions yet</p>
+                        <p class="text-slate-400 text-sm mt-2">Your transaction history will appear here</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer></footer>
     <script src="script.js"></script>
